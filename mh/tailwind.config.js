@@ -29,7 +29,7 @@ export default {
     screens: {
       xxs: "320px",
       // => @media (min-width: 320px) { ... }
-      xs: '400px',
+
       sm: "640px",
       // => @media (min-width: 640px) { ... }
 
