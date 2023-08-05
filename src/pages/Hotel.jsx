@@ -28,7 +28,7 @@ function Hotel() {
     posts()
   }, [])
   return (
-    <div className="w-full md:col-span-3 overflow-y-scroll gap-3 h-full grid grid-cols-1 md:grid-cols-1 md:gap-6 xl:grid-cols-1">
+    <div className="w-full no-scrollbar md:col-span-3 overflow-y-scroll gap-3 h-full grid grid-cols-1 md:grid-cols-1 md:gap-6 xl:grid-cols-1">
       {products.map((product) => {
         return (
           <div className="w-full gap-6 flex flex-col" key={product._id} >
