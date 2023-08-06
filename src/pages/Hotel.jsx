@@ -20,7 +20,6 @@ function Hotel() {
 
   const posts = async () => {
     const getData = await client.fetch(query)
-    console.log(getData)
     setProducts(getData)
   }
 
@@ -28,13 +27,10 @@ function Hotel() {
     posts()
   }, [])
   return (
-    <div className="w-full no-scrollbar md:col-span-3 overflow-y-scroll gap-3 h-full grid grid-cols-1 md:grid-cols-1 md:gap-6 xl:grid-cols-1">
+    <div className="w-full no-scrollbar xl:overflow-y-scroll md:col-span-3 md:col-start-2 gap-3 grid grid-cols-1 md:grid-cols-1 md:gap-6 xl:grid-cols-1 xl:col-span-3 xl:col-start-2">
       {products.map((product) => {
         return (
           <div className="w-full gap-6 flex flex-col" key={product._id} >
-            <Card index={product._id} item={product} />
-            <Card index={product._id} item={product} />
-            <Card index={product._id} item={product} />
             <Card index={product._id} item={product} />
           </div>
         )
