@@ -1,6 +1,6 @@
 /* eslint-disable no-undef */
 import sanityClient from "@sanity/client";
-import imageUrlBuilder from '@sanity/image-url'
+import imageUrlBuilder from "@sanity/image-url";
 
 const client = sanityClient({
   projectId: import.meta.env.VITE_PROJECT_ID_SANITY,
@@ -9,9 +9,9 @@ const client = sanityClient({
   useCdn: true, // `false` if you want to ensure fresh data
 });
 
-const builder = imageUrlBuilder(client)
+const builder = imageUrlBuilder(client);
 export function urlFor(source) {
-  return builder.image(source)
+  return builder.image(source);
 }
 
 export default client;
