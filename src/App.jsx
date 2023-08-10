@@ -9,7 +9,7 @@ function App() {
       <div className="relative  w-full justify-center items-center flex">
         <Header />
       </div>
-      <div className="mb-9 xl:mb-0 row-span-4 w-full xl:r relative md:grid md:grid-cols-4 xl:col-span-5 xl:col-start-1 xl:row-start-1">
+      <div className="mb-9 xl:mb-0 row-span-4 w-full xl:r relative md:grid md:grid-cols-4 xl:col-span-4 xl:col-start-1 xl:row-start-1">
         <Tabs />
         <Outlet />
       </div>
